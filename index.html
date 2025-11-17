@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AKS Asset Generator</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- SheetJS for XLSX export -->
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="title-block">
+      <h1>AKS Asset Generator</h1>
+      <p class="subtitle">
+        Generate GLT-ready asset IDs from the AKS catalog for many rooms in one go.
+      </p>
+    </div>
+    <div class="chip">
+      🔧 Internal Tool · Hochschule AB
+    </div>
+  </header>
+
+  <div class="card" id="input-card">
+    <div class="card-header">
+      <h2>1. Input rows <span class="badge">Paste your room lists</span></h2>
+      <span class="pill-info">
+        Tip: One AKS type per row, many rooms per textarea
+      </span>
+    </div>
+    <p class="small">
+      For each row, choose a <strong>Gruppe</strong> and <strong>Anlagetyp</strong>, then enter
+      <strong>Gebäude</strong> and <strong>Räume</strong> (multiple allowed).<br />
+      Räume: <strong>eine pro Zeile</strong>. For multiple assets in one room, add <strong>xN</strong>:<br />
+      <code>
+        U05<br />
+        U06 x4<br />
+        U08 x2<br />
+        E16 x2<br />
+        E23 x3
+      </code><br />
+      The field <strong>Menge (Default)</strong> is used for rooms <em>without</em> an "xN".
+    </p>
+
+    <div class="input-table-header">
+      <div>Gruppe</div>
+      <div>Anlagetyp (Code – Beschreibung)</div>
+      <div>Gebäude</div>
+      <div>Räume</div>
+      <div>Menge (Default)</div>
+      <div></div>
+    </div>
+
+    <div id="input-rows"></div>
+
+    <div class="btn-row">
+      <button type="button" class="btn-secondary" id="add-row-btn">+ Add row</button>
+      <button type="button" class="btn-primary" id="generate-btn">Generate assets</button>
+    </div>
+    <div id="input-error" class="error" style="display:none;"></div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <h2>2. Result table <span class="badge">Ready for Excel import</span></h2>
+      <span class="pill-info" id="row-count-info">
+        0 assets generated
+      </span>
+    </div>
+    <p class="small">
+      One row per generated asset. Menge per room is defined via <code>xN</code> or the default Menge field.<br />
+      Click <strong>Download XLSX</strong> to save a file that you can open directly in Excel.
+    </p>
+
+    <div class="btn-row">
+      <button type="button" class="btn-secondary" id="clear-results-btn">Clear results</button>
+      <button type="button" class="btn-primary" id="download-xlsx-btn">Download XLSX</button>
+    </div>
+
+    <div class="scroll">
+      <table>
+        <thead>
+          <tr>
+            <th>Gruppe Technischer Anlagen</th>
+            <th>Technische Anlage</th>
+            <th>Techn. Anlagen Nr.</th>
+            <th>GLT-Code</th>
+            <th>Anlagenpriorität</th>
+            <th>Kostenstelle</th>
+            <th>Gebäude</th>
+            <th>Raum</th>
+            <th>Anlagetyp</th>
+            <th>Menge</th>
+          </tr>
+        </thead>
+        <tbody id="result-body"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Logic -->
+  <script src="script.js"></script>
+</body>
+</html>

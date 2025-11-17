@@ -1,0 +1,1694 @@
+[
+  {
+    "groupId": "334",
+    "sub": "01",
+    "code": "TÜR",
+    "description": "Tür"
+  },
+  {
+    "groupId": "334",
+    "sub": "01",
+    "code": "TFL",
+    "description": "Tür (Flucht)"
+  },
+  {
+    "groupId": "334",
+    "sub": "01",
+    "code": "TBS",
+    "description": "Tür (Brandschutz)"
+  },
+  {
+    "groupId": "334",
+    "sub": "01",
+    "code": "TRS",
+    "description": "Tür (Rauchschutz)"
+  },
+  {
+    "groupId": "334",
+    "sub": "01",
+    "code": "TBF",
+    "description": "Tür (Brandschutz + Flucht)"
+  },
+  {
+    "groupId": "334",
+    "sub": "01",
+    "code": "TRF",
+    "description": "Tür (Rauchschutz + Flucht)"
+  },
+  {
+    "groupId": "334",
+    "sub": "02",
+    "code": "RTO",
+    "description": "Rolltor / Sektionaltor"
+  },
+  {
+    "groupId": "334",
+    "sub": "02",
+    "code": "RBS",
+    "description": "Rolltor / Sektionaltor (Brandschutz)"
+  },
+  {
+    "groupId": "334",
+    "sub": "02",
+    "code": "RRS",
+    "description": "Rolltor / Sektionaltor (Rauchschutz)"
+  },
+  {
+    "groupId": "334",
+    "sub": "02",
+    "code": "RFL",
+    "description": "Rolltor / Sektionaltor (Flucht)"
+  },
+  {
+    "groupId": "334",
+    "sub": "03",
+    "code": "STO",
+    "description": "Schiebetür / -tor"
+  },
+  {
+    "groupId": "334",
+    "sub": "03",
+    "code": "SBS",
+    "description": "Schiebetür / -tor (Brandschutz)"
+  },
+  {
+    "groupId": "334",
+    "sub": "03",
+    "code": "SRS",
+    "description": "Schiebetür / -tor (Rauchschutz)"
+  },
+  {
+    "groupId": "334",
+    "sub": "03",
+    "code": "SFL",
+    "description": "Schiebetür / -tor (Flucht)"
+  },
+  {
+    "groupId": "334",
+    "sub": "04",
+    "code": "FTU",
+    "description": "Faltflügeltür / -tor"
+  },
+  {
+    "groupId": "334",
+    "sub": "04",
+    "code": "FTB",
+    "description": "Faltflügeltür / -tor (Brandschutz)"
+  },
+  {
+    "groupId": "334",
+    "sub": "04",
+    "code": "FTR",
+    "description": "Faltflügeltür / -tor (Rauchschutz)"
+  },
+  {
+    "groupId": "334",
+    "sub": "04",
+    "code": "FTF",
+    "description": "Faltflügeltür / -tor (Flucht)"
+  },
+  {
+    "groupId": "334",
+    "sub": "06",
+    "code": "FEN",
+    "description": "Fenster"
+  },
+  {
+    "groupId": "334",
+    "sub": "06",
+    "code": "FFL",
+    "description": "Fenster (Flucht)"
+  },
+  {
+    "groupId": "334",
+    "sub": "06",
+    "code": "FBS",
+    "description": "Fenster (Brandschutz)"
+  },
+  {
+    "groupId": "334",
+    "sub": "06",
+    "code": "FRS",
+    "description": "Fenster (Rauchschutz)"
+  },
+  {
+    "groupId": "334",
+    "sub": "06",
+    "code": "FBF",
+    "description": "Fenster (Brandschutz+Flucht)"
+  },
+  {
+    "groupId": "334",
+    "sub": "06",
+    "code": "FRF",
+    "description": "Fenster (Rauchschutz+Flucht)"
+  },
+  {
+    "groupId": "338",
+    "sub": "00",
+    "code": "SON",
+    "description": "Sonneschutz"
+  },
+  {
+    "groupId": "338",
+    "sub": "01",
+    "code": "ROL",
+    "description": "Rolladen außen"
+  },
+  {
+    "groupId": "338",
+    "sub": "02",
+    "code": "MAR",
+    "description": "Markise außen"
+  },
+  {
+    "groupId": "338",
+    "sub": "03",
+    "code": "JAL",
+    "description": "Jalousie außen"
+  },
+  {
+    "groupId": "338",
+    "sub": "04",
+    "code": "DUN",
+    "description": "Verdunkelung außen"
+  },
+  {
+    "groupId": "344",
+    "sub": "01",
+    "code": "TÜR",
+    "description": "Tür"
+  },
+  {
+    "groupId": "344",
+    "sub": "01",
+    "code": "TFL",
+    "description": "Tür (Flucht)"
+  },
+  {
+    "groupId": "344",
+    "sub": "01",
+    "code": "TBS",
+    "description": "Tür (Brandschutz)"
+  },
+  {
+    "groupId": "344",
+    "sub": "01",
+    "code": "TRS",
+    "description": "Tür (Rauchschutz)"
+  },
+  {
+    "groupId": "344",
+    "sub": "01",
+    "code": "TBF",
+    "description": "Tür (Brandschutz + Flucht)"
+  },
+  {
+    "groupId": "344",
+    "sub": "01",
+    "code": "TRF",
+    "description": "Tür (Rauchschutz + Flucht)"
+  },
+  {
+    "groupId": "344",
+    "sub": "02",
+    "code": "RTO",
+    "description": "Rolltor / Sektionaltor"
+  },
+  {
+    "groupId": "344",
+    "sub": "02",
+    "code": "RBS",
+    "description": "Rolltor / Sektionaltor (Brandschutz)"
+  },
+  {
+    "groupId": "344",
+    "sub": "02",
+    "code": "RRS",
+    "description": "Rolltor / Sektionaltor (Rauchschutz)"
+  },
+  {
+    "groupId": "344",
+    "sub": "02",
+    "code": "RFL",
+    "description": "Rolltor / Sektionaltor (Flucht)"
+  },
+  {
+    "groupId": "344",
+    "sub": "03",
+    "code": "STO",
+    "description": "Schiebetür / -tor"
+  },
+  {
+    "groupId": "344",
+    "sub": "03",
+    "code": "SBS",
+    "description": "Schiebetür / -tor (Brandschutz)"
+  },
+  {
+    "groupId": "344",
+    "sub": "03",
+    "code": "SRS",
+    "description": "Schiebetür / -tor (Rauchschutz)"
+  },
+  {
+    "groupId": "344",
+    "sub": "03",
+    "code": "SFL",
+    "description": "Schiebetür / -tor (Flucht)"
+  },
+  {
+    "groupId": "344",
+    "sub": "04",
+    "code": "FTU",
+    "description": "Faltflügeltür / -tor"
+  },
+  {
+    "groupId": "344",
+    "sub": "04",
+    "code": "FTB",
+    "description": "Faltflügeltür / -tor (Brandschutz)"
+  },
+  {
+    "groupId": "344",
+    "sub": "04",
+    "code": "FTR",
+    "description": "Faltflügeltür / -tor (Rauchschutz)"
+  },
+  {
+    "groupId": "344",
+    "sub": "04",
+    "code": "FTF",
+    "description": "Faltflügeltür / -tor (Flucht)"
+  },
+  {
+    "groupId": "344",
+    "sub": "06",
+    "code": "FEN",
+    "description": "Fenster"
+  },
+  {
+    "groupId": "344",
+    "sub": "06",
+    "code": "FFL",
+    "description": "Fenster (Flucht)"
+  },
+  {
+    "groupId": "344",
+    "sub": "06",
+    "code": "FBS",
+    "description": "Fenster (Brandschutz)"
+  },
+  {
+    "groupId": "344",
+    "sub": "06",
+    "code": "FRS",
+    "description": "Fenster (Rauchschutz)"
+  },
+  {
+    "groupId": "344",
+    "sub": "06",
+    "code": "FBF",
+    "description": "Fenster (Brandschutz+Flucht)"
+  },
+  {
+    "groupId": "344",
+    "sub": "06",
+    "code": "FRF",
+    "description": "Fenster (Rauchschutz+Flucht)"
+  },
+  {
+    "groupId": "346",
+    "sub": "01",
+    "code": "WEL",
+    "description": "Wandelemente (beweglich)"
+  },
+  {
+    "groupId": "352",
+    "sub": "00",
+    "code": "DBO",
+    "description": "Doppelboden"
+  },
+  {
+    "groupId": "359",
+    "sub": "07",
+    "code": "LEI",
+    "description": "Leiter"
+  },
+  {
+    "groupId": "359",
+    "sub": "08",
+    "code": "TRI",
+    "description": "Tritt"
+  },
+  {
+    "groupId": "359",
+    "sub": "09",
+    "code": "ETR",
+    "description": "Einschubtreppe"
+  },
+  {
+    "groupId": "359",
+    "sub": "10",
+    "code": "TRK",
+    "description": "Klapptreppe"
+  },
+  {
+    "groupId": "359",
+    "sub": "11",
+    "code": "STR",
+    "description": "Scherentreppe"
+  },
+  {
+    "groupId": "359",
+    "sub": "12",
+    "code": "BBD",
+    "description": "Baulicher Brandschutz"
+  },
+  {
+    "groupId": "362",
+    "sub": "00",
+    "code": "DAU",
+    "description": "Dachausstieg"
+  },
+  {
+    "groupId": "363",
+    "sub": "00",
+    "code": "DEN",
+    "description": "Dachentwässerung"
+  },
+  {
+    "groupId": "371",
+    "sub": "00",
+    "code": "EBK",
+    "description": "Einbauküche"
+  },
+  {
+    "groupId": "372",
+    "sub": "01",
+    "code": "WBA",
+    "description": "Werkbänke"
+  },
+  {
+    "groupId": "372",
+    "sub": "02",
+    "code": "LTI",
+    "description": "Labortische"
+  },
+  {
+    "groupId": "379",
+    "sub": "00",
+    "code": "RSV",
+    "description": "Rauchschutzvorhänge"
+  },
+  {
+    "groupId": "411",
+    "sub": "01",
+    "code": "ABL",
+    "description": "Abläufe"
+  },
+  {
+    "groupId": "411",
+    "sub": "02",
+    "code": "AWL",
+    "description": "Abwasserleitungen"
+  },
+  {
+    "groupId": "411",
+    "sub": "03",
+    "code": "ABW",
+    "description": "Abwassersammelanlage"
+  },
+  {
+    "groupId": "411",
+    "sub": "03",
+    "code": "ABA",
+    "description": "Abwasserbehandlungsanlage"
+  },
+  {
+    "groupId": "411",
+    "sub": "03",
+    "code": "NEU",
+    "description": "Neutralisationsanlage"
+  },
+  {
+    "groupId": "411",
+    "sub": "04",
+    "code": "BAS",
+    "description": "Benzinabscheider"
+  },
+  {
+    "groupId": "411",
+    "sub": "04",
+    "code": "FAS",
+    "description": "Fettabscheider"
+  },
+  {
+    "groupId": "411",
+    "sub": "04",
+    "code": "ABS",
+    "description": "Abscheider"
+  },
+  {
+    "groupId": "411",
+    "sub": "05",
+    "code": "AHA",
+    "description": "Abwasserhebeanlage"
+  },
+  {
+    "groupId": "412",
+    "sub": "01",
+    "code": "WGA",
+    "description": "Wassergewinnungsanlagen"
+  },
+  {
+    "groupId": "412",
+    "sub": "02",
+    "code": "WAA",
+    "description": "Wasseraufbereitungsanlage"
+  },
+  {
+    "groupId": "412",
+    "sub": "03",
+    "code": "DEA",
+    "description": "Druckerhöhungsanlage"
+  },
+  {
+    "groupId": "412",
+    "sub": "04",
+    "code": "ROL",
+    "description": "Rohrleitungen"
+  },
+  {
+    "groupId": "412",
+    "sub": "05",
+    "code": "DWE",
+    "description": "Dezentrale Wassererwärmer"
+  },
+  {
+    "groupId": "412",
+    "sub": "06",
+    "code": "SAN",
+    "description": "Sanitärobjekte"
+  },
+  {
+    "groupId": "412",
+    "sub": "07",
+    "code": "HWV",
+    "description": "Hauptwasserversorgung"
+  },
+  {
+    "groupId": "412",
+    "sub": "08",
+    "code": "BWV",
+    "description": "Brunnenwasserversorgung"
+  },
+  {
+    "groupId": "412",
+    "sub": "09",
+    "code": "NSP",
+    "description": "Nachspeiseanlage"
+  },
+  {
+    "groupId": "412",
+    "sub": "10",
+    "code": "HYS",
+    "description": "Hygienespülanlage"
+  },
+  {
+    "groupId": "412",
+    "sub": "11",
+    "code": "ARM",
+    "description": "Armatur/Wasserhahn"
+  },
+  {
+    "groupId": "412",
+    "sub": "12",
+    "code": "TWV",
+    "description": "Trinkwasserverteilung"
+  },
+  {
+    "groupId": "413",
+    "sub": "01",
+    "code": "GFW",
+    "description": "Gasanlagen für Wirtschaftswärme"
+  },
+  {
+    "groupId": "413",
+    "sub": "01",
+    "code": "GLA",
+    "description": "Gaslagerungsanlagen"
+  },
+  {
+    "groupId": "413",
+    "sub": "01",
+    "code": "GEA",
+    "description": "Gaserzeugungsanlagen"
+  },
+  {
+    "groupId": "413",
+    "sub": "02",
+    "code": "GUE",
+    "description": "Übergabestationen"
+  },
+  {
+    "groupId": "413",
+    "sub": "03",
+    "code": "GDR",
+    "description": "Druckregelanlagen"
+  },
+  {
+    "groupId": "413",
+    "sub": "04",
+    "code": "GAL",
+    "description": "Gasleitungen (Stränge)"
+  },
+  {
+    "groupId": "419",
+    "sub": "01",
+    "code": "IBL",
+    "description": "Installationsblöcke"
+  },
+  {
+    "groupId": "419",
+    "sub": "02",
+    "code": "SAZ",
+    "description": "Sanitärzellen"
+  },
+  {
+    "groupId": "421",
+    "sub": "01",
+    "code": "BVA",
+    "description": "Brennstoffversorgungsanlagen"
+  },
+  {
+    "groupId": "421",
+    "sub": "02",
+    "code": "WUE",
+    "description": "Wärmeübergabestation"
+  },
+  {
+    "groupId": "421",
+    "sub": "03",
+    "code": "WEA",
+    "description": "Wärmeerzeugungsanlage"
+  },
+  {
+    "groupId": "421",
+    "sub": "04",
+    "code": "WPA",
+    "description": "Wärmepumpenanlagen"
+  },
+  {
+    "groupId": "421",
+    "sub": "05",
+    "code": "SOL",
+    "description": "Solaranlagen"
+  },
+  {
+    "groupId": "421",
+    "sub": "06",
+    "code": "ZWE",
+    "description": "zentrale Wassererwärmungsanlagen"
+  },
+  {
+    "groupId": "421",
+    "sub": "07",
+    "code": "WVE",
+    "description": "Wärmeverteilung"
+  },
+  {
+    "groupId": "421",
+    "sub": "08",
+    "code": "RHF",
+    "description": "Raumheizflächen"
+  },
+  {
+    "groupId": "422",
+    "sub": "02",
+    "code": "WVT",
+    "description": "Wärmeverteilung"
+  },
+  {
+    "groupId": "431",
+    "sub": "00",
+    "code": "RLT",
+    "description": "Raumluftanlage (Hauptanlage)"
+  },
+  {
+    "groupId": "431",
+    "sub": "01",
+    "code": "RLT",
+    "description": "Raumluftanlage (Aussenluftkanal)"
+  },
+  {
+    "groupId": "431",
+    "sub": "02",
+    "code": "RLT",
+    "description": "Raumluftanlage (Zuluftkanal)"
+  },
+  {
+    "groupId": "431",
+    "sub": "03",
+    "code": "RLT",
+    "description": "Raumluftanlage (Abluftkanal)"
+  },
+  {
+    "groupId": "431",
+    "sub": "04",
+    "code": "RLT",
+    "description": "Raumluftanlage (Fortluftkanal)"
+  },
+  {
+    "groupId": "431",
+    "sub": "05",
+    "code": "MEA",
+    "description": "mechanische Entrauchungsanlage"
+  },
+  {
+    "groupId": "431",
+    "sub": "06",
+    "code": "KLI",
+    "description": "Klimaschrank/-truhe"
+  },
+  {
+    "groupId": "431",
+    "sub": "07",
+    "code": "UKG",
+    "description": "Umluftkühlgerät"
+  },
+  {
+    "groupId": "431",
+    "sub": "08",
+    "code": "RWA",
+    "description": "Rauch-Wärme-Abzugsanlage"
+  },
+  {
+    "groupId": "432",
+    "sub": "00",
+    "code": "TKA",
+    "description": "Teilklimaanlage (Hauptanlage)"
+  },
+  {
+    "groupId": "432",
+    "sub": "01",
+    "code": "TKA",
+    "description": "Teilklimaanlage (Aussenluftkanal)"
+  },
+  {
+    "groupId": "432",
+    "sub": "02",
+    "code": "TKA",
+    "description": "Teilklimaanlage (Zuluftkanal)"
+  },
+  {
+    "groupId": "432",
+    "sub": "03",
+    "code": "TKA",
+    "description": "Teilklimaanlage (Abluftkanal)"
+  },
+  {
+    "groupId": "432",
+    "sub": "04",
+    "code": "TKA",
+    "description": "Teilklimaanlage (Fortluftkanal)"
+  },
+  {
+    "groupId": "433",
+    "sub": "00",
+    "code": "KLA",
+    "description": "Klimaanlage  (Hauptanlage)"
+  },
+  {
+    "groupId": "433",
+    "sub": "01",
+    "code": "KLA",
+    "description": "Klimaanlage  (Aussenluftkanal)"
+  },
+  {
+    "groupId": "433",
+    "sub": "02",
+    "code": "KLA",
+    "description": "Klimaanlage  (Zuluftkanal)"
+  },
+  {
+    "groupId": "433",
+    "sub": "03",
+    "code": "KLA",
+    "description": "Klimaanlage  (Abluftkanal)"
+  },
+  {
+    "groupId": "433",
+    "sub": "04",
+    "code": "KLA",
+    "description": "Klimaanlage  (Fortluftkanal)"
+  },
+  {
+    "groupId": "﻿434",
+    "sub": "01",
+    "code": "KEA",
+    "description": "Kälteerzeugungsanlage"
+  },
+  {
+    "groupId": "434",
+    "sub": "02",
+    "code": "KVE",
+    "description": "Kälteverteilung"
+  },
+  {
+    "groupId": "434",
+    "sub": "03",
+    "code": "KUS",
+    "description": "Kälteübergabestation"
+  },
+  {
+    "groupId": "﻿439",
+    "sub": "01",
+    "code": "LDE",
+    "description": "Lüftungsdecke"
+  },
+  {
+    "groupId": "﻿439",
+    "sub": "02",
+    "code": "KDE",
+    "description": "Kühldecke"
+  },
+  {
+    "groupId": "﻿439",
+    "sub": "03",
+    "code": "ALF",
+    "description": "Abluftfenster"
+  },
+  {
+    "groupId": "﻿439",
+    "sub": "04",
+    "code": "WKF",
+    "description": "Wandkühlfläche"
+  },
+  {
+    "groupId": "﻿439",
+    "sub": "05",
+    "code": "EAS",
+    "description": "Einzelabsaugung"
+  },
+  {
+    "groupId": "﻿439",
+    "sub": "06",
+    "code": "LSA",
+    "description": "Luftschleieranlage"
+  },
+  {
+    "groupId": "﻿441",
+    "sub": "01",
+    "code": "MSA",
+    "description": "Mittelspannungsschaltanlage"
+  },
+  {
+    "groupId": "﻿441",
+    "sub": "01",
+    "code": "HSA",
+    "description": "Hochspannungsschaltanlage"
+  },
+  {
+    "groupId": "﻿441",
+    "sub": "02",
+    "code": "TRA",
+    "description": "Transformator"
+  },
+  {
+    "groupId": "﻿441",
+    "sub": "03",
+    "code": "UEV",
+    "description": "Übergabeverteiler"
+  },
+  {
+    "groupId": "﻿442",
+    "sub": "01",
+    "code": "SEA",
+    "description": "Stromerzeugungsaggregate"
+  },
+  {
+    "groupId": "﻿442",
+    "sub": "02",
+    "code": "NSA",
+    "description": "Notstromaggregat"
+  },
+  {
+    "groupId": "﻿442",
+    "sub": "03",
+    "code": "USV",
+    "description": "Unterbrechungsfreie Stromversorgung"
+  },
+  {
+    "groupId": "﻿442",
+    "sub": "03",
+    "code": "ZBA",
+    "description": "Zentrale Batterieanlagen"
+  },
+  {
+    "groupId": "﻿442",
+    "sub": "04",
+    "code": "PVA",
+    "description": "Photovoltaikanlagen"
+  },
+  {
+    "groupId": "﻿443",
+    "sub": "01",
+    "code": "NHV",
+    "description": "Niederspannungs-Hauptverteiler"
+  },
+  {
+    "groupId": "﻿443",
+    "sub": "01",
+    "code": "HAK",
+    "description": "Übergabeverteiler (Ring / Stich)"
+  },
+  {
+    "groupId": "﻿443",
+    "sub": "01",
+    "code": "UVA",
+    "description": "Unterverteiler (allgemein)"
+  },
+  {
+    "groupId": "﻿443",
+    "sub": "01",
+    "code": "UVU",
+    "description": "Unterverteiler USV-Netz"
+  },
+  {
+    "groupId": "﻿443",
+    "sub": "01",
+    "code": "UVI",
+    "description": "Unterverteiler IT-Netz"
+  },
+  {
+    "groupId": "﻿443",
+    "sub": "01",
+    "code": "UVB",
+    "description": "Unterverteiler Sicherheitsbeleuchtung"
+  },
+  {
+    "groupId": "﻿443",
+    "sub": "02",
+    "code": "UVS",
+    "description": "Unterverteiler Schwachstrom"
+  },
+  {
+    "groupId": "﻿443",
+    "sub": "03",
+    "code": "BKA",
+    "description": "Blindstromkompensationsanlage"
+  },
+  {
+    "groupId": "﻿443",
+    "sub": "04",
+    "code": "MUA",
+    "description": "Maximumüberwachungsanlagen"
+  },
+  {
+    "groupId": "﻿443",
+    "sub": "05",
+    "code": "TRA",
+    "description": "Transformator"
+  },
+  {
+    "groupId": "﻿444",
+    "sub": "00",
+    "code": "GHV",
+    "description": "Gebäudehauptverteiler"
+  },
+  {
+    "groupId": "﻿444",
+    "sub": "01",
+    "code": "KAL",
+    "description": "Kabel und Leitungen"
+  },
+  {
+    "groupId": "﻿444",
+    "sub": "02",
+    "code": "UVA",
+    "description": "Unterverteiler (allgemein)"
+  },
+  {
+    "groupId": "﻿444",
+    "sub": "03",
+    "code": "ELI",
+    "description": "Elektrotechnische Installation"
+  },
+  {
+    "groupId": "﻿444",
+    "sub": "04",
+    "code": "BGH",
+    "description": "Begleitheizung"
+  },
+  {
+    "groupId": "﻿444",
+    "sub": "05",
+    "code": "ISP",
+    "description": "Installationsschwerpunkt"
+  },
+  {
+    "groupId": "﻿445",
+    "sub": "01",
+    "code": "BEL",
+    "description": "Beleuchtungsanlage (ortsfeste Leuchten)"
+  },
+  {
+    "groupId": "445",
+    "sub": "02",
+    "code": "SIB",
+    "description": "Sicherheitsbeleuchtungsanlage"
+  },
+  {
+    "groupId": "﻿446",
+    "sub": "00",
+    "code": "BEA",
+    "description": "Blitzschutz- und Erdungsanlage"
+  },
+  {
+    "groupId": "﻿446",
+    "sub": "01",
+    "code": "ABL",
+    "description": "Auffangeinrichtungen, Ableitungen"
+  },
+  {
+    "groupId": "﻿446",
+    "sub": "02",
+    "code": "ERD",
+    "description": "Erdungen"
+  },
+  {
+    "groupId": "﻿446",
+    "sub": "03",
+    "code": "PNA",
+    "description": "Potentialausgleich"
+  },
+  {
+    "groupId": "﻿446",
+    "sub": "04",
+    "code": "BSA",
+    "description": "Blitzschutzanlage"
+  },
+  {
+    "groupId": "﻿449",
+    "sub": "00",
+    "code": "SSA",
+    "description": "Starkstromanlagen, sonstiges"
+  },
+  {
+    "groupId": "﻿451",
+    "sub": "00",
+    "code": "TEA",
+    "description": "Telekommunikationsanlagen"
+  },
+  {
+    "groupId": "﻿452",
+    "sub": "01",
+    "code": "PRA",
+    "description": "Personenrufanlage"
+  },
+  {
+    "groupId": "452",
+    "sub": "02",
+    "code": "LRA",
+    "description": "Lichtrufanlage"
+  },
+  {
+    "groupId": "452",
+    "sub": "02",
+    "code": "KTA",
+    "description": "Klingel- und Türsprechanlage"
+  },
+  {
+    "groupId": "452",
+    "sub": "03",
+    "code": "TSA",
+    "description": "Türsprechanlage / Türöffnungsanlagen"
+  },
+  {
+    "groupId": "452",
+    "sub": "03",
+    "code": "TUA",
+    "description": "Türüberwachungsanlage"
+  },
+  {
+    "groupId": "﻿453",
+    "sub": "01",
+    "code": "UHA",
+    "description": "Uhrenanlage"
+  },
+  {
+    "groupId": "﻿453",
+    "sub": "02",
+    "code": "ZEA",
+    "description": "Zeiterfassungsanlage"
+  },
+  {
+    "groupId": "454",
+    "sub": "01",
+    "code": "ELA",
+    "description": "Beschallungsanlage"
+  },
+  {
+    "groupId": "454",
+    "sub": "02",
+    "code": "KFA",
+    "description": "Konferenzanlage"
+  },
+  {
+    "groupId": "454",
+    "sub": "03",
+    "code": "GSA",
+    "description": "Gegensprechanlage"
+  },
+  {
+    "groupId": "454",
+    "sub": "03",
+    "code": "WSA",
+    "description": "Wechselsprechanlage"
+  },
+  {
+    "groupId": "﻿455",
+    "sub": "01",
+    "code": "FEA",
+    "description": "Fernseh- und Rundfunkempfangsanlagen"
+  },
+  {
+    "groupId": "455",
+    "sub": "05",
+    "code": "FSE",
+    "description": "Funk Sende- und Empfangsanlage"
+  },
+  {
+    "groupId": "455",
+    "sub": "04",
+    "code": "VIA",
+    "description": "Videoanlage"
+  },
+  {
+    "groupId": "﻿456",
+    "sub": "01",
+    "code": "BMA",
+    "description": "Brandmeldeanlage"
+  },
+  {
+    "groupId": "﻿456",
+    "sub": "02",
+    "code": "UMA",
+    "description": "Überfallmeldeanlage"
+  },
+  {
+    "groupId": "﻿456",
+    "sub": "02",
+    "code": "EMA",
+    "description": "Einbruchmeldeanlage"
+  },
+  {
+    "groupId": "﻿456",
+    "sub": "03",
+    "code": "WKA",
+    "description": "Wächterkontrollanlage"
+  },
+  {
+    "groupId": "﻿456",
+    "sub": "04",
+    "code": "ZKA",
+    "description": "Zugangskontrollanlage"
+  },
+  {
+    "groupId": "﻿456",
+    "sub": "05",
+    "code": "RBA",
+    "description": "Raumbeobachtungsanlage"
+  },
+  {
+    "groupId": "﻿456",
+    "sub": "06",
+    "code": "GWA",
+    "description": "Gaswarnanlage"
+  },
+  {
+    "groupId": "﻿456",
+    "sub": "07",
+    "code": "AMA",
+    "description": "Ampelanlage"
+  },
+  {
+    "groupId": "﻿457",
+    "sub": "01",
+    "code": "UNL",
+    "description": "Übertragungsnetz LAN"
+  },
+  {
+    "groupId": "457",
+    "sub": "09",
+    "code": "UNS",
+    "description": "Übertragungsnetze, sonstiges"
+  },
+  {
+    "groupId": "﻿459",
+    "sub": "01",
+    "code": "FIA",
+    "description": "Fernmelde-/informationstechnische Anlagen, sonstiges"
+  },
+  {
+    "groupId": "459",
+    "sub": "02",
+    "code": "PEL",
+    "description": "Personenleitsystem"
+  },
+  {
+    "groupId": "459",
+    "sub": "03",
+    "code": "PAS",
+    "description": "Parkleitsystem"
+  },
+  {
+    "groupId": "﻿461",
+    "sub": "01",
+    "code": "PEA",
+    "description": "Personenaufzug"
+  },
+  {
+    "groupId": "﻿461",
+    "sub": "02",
+    "code": "LAA",
+    "description": "Lastenaufzug"
+  },
+  {
+    "groupId": "﻿461",
+    "sub": "03",
+    "code": "KGA",
+    "description": "Kleingüteraufzug (z.B. Speiseaufzug)"
+  },
+  {
+    "groupId": "﻿462",
+    "sub": "01",
+    "code": "FST",
+    "description": "Fahrsteige"
+  },
+  {
+    "groupId": "462",
+    "sub": "01",
+    "code": "FAT",
+    "description": "Fahrtreppen,"
+  },
+  {
+    "groupId": "﻿463",
+    "sub": "01",
+    "code": "FBA",
+    "description": "Fassadenbefahranlage"
+  },
+  {
+    "groupId": "464",
+    "sub": "01",
+    "code": "AWT",
+    "description": "Automatische Warentransportanlage"
+  },
+  {
+    "groupId": "464",
+    "sub": "02",
+    "code": "KGF",
+    "description": "Kleingüterförderanlage"
+  },
+  {
+    "groupId": "464",
+    "sub": "03",
+    "code": "RPA",
+    "description": "Rohrpostanlage"
+  },
+  {
+    "groupId": "﻿465",
+    "sub": "01",
+    "code": "KRA",
+    "description": "Krananlage"
+  },
+  {
+    "groupId": "﻿465",
+    "sub": "02",
+    "code": "OHZ",
+    "description": "Ortsfestes Hebezeug"
+  },
+  {
+    "groupId": "﻿465",
+    "sub": "03",
+    "code": "BHZ",
+    "description": "Beweglichesn Hebezeug"
+  },
+  {
+    "groupId": "﻿469",
+    "sub": "01",
+    "code": "HEB",
+    "description": "Hebebühnen"
+  },
+  {
+    "groupId": "﻿471",
+    "sub": "01",
+    "code": "GKA",
+    "description": "Großküchenanlagen"
+  },
+  {
+    "groupId": "﻿471",
+    "sub": "02",
+    "code": "STK",
+    "description": "Stationsküche"
+  },
+  {
+    "groupId": "﻿471",
+    "sub": "03",
+    "code": "TEK",
+    "description": "Teeküche"
+  },
+  {
+    "groupId": "﻿472",
+    "sub": "01",
+    "code": "WAE",
+    "description": "Wäschereianlage"
+  },
+  {
+    "groupId": "﻿472",
+    "sub": "02",
+    "code": "CRA",
+    "description": "Chemische Reinigungsanlage"
+  },
+  {
+    "groupId": "﻿472",
+    "sub": "03",
+    "code": "MAG",
+    "description": "Medizinische Gerätereinigungsanlage"
+  },
+  {
+    "groupId": "﻿472",
+    "sub": "04",
+    "code": "BRA",
+    "description": "Bettenreinigungsanlage"
+  },
+  {
+    "groupId": "﻿472",
+    "sub": "05",
+    "code": "STA",
+    "description": "Sterilisationsanlage"
+  },
+  {
+    "groupId": "﻿473",
+    "sub": "01",
+    "code": "TMG",
+    "description": "Technische und medizinische Gase (Zentrale)"
+  },
+  {
+    "groupId": "﻿473",
+    "sub": "02",
+    "code": "DLA",
+    "description": "Drucklufterzeugungsanlagen"
+  },
+  {
+    "groupId": "﻿473",
+    "sub": "03",
+    "code": "VEA",
+    "description": "Vakuumerzeugungsanlagen"
+  },
+  {
+    "groupId": "﻿473",
+    "sub": "04",
+    "code": "DRA",
+    "description": "Druckregelanlagen"
+  },
+  {
+    "groupId": "﻿474",
+    "sub": "01",
+    "code": "DIG",
+    "description": "Diagnosegeräte"
+  },
+  {
+    "groupId": "﻿474",
+    "sub": "02",
+    "code": "BEG",
+    "description": "Behandlungsgeräte"
+  },
+  {
+    "groupId": "﻿474",
+    "sub": "03",
+    "code": "OPE",
+    "description": "OP-Einrichtungen"
+  },
+  {
+    "groupId": "﻿474",
+    "sub": "04",
+    "code": "HEE",
+    "description": "Hebeeinrichtungen für Behinderte"
+  },
+  {
+    "groupId": "﻿474",
+    "sub": "05",
+    "code": "LAE",
+    "description": "Laboreinrichtung"
+  },
+  {
+    "groupId": "475",
+    "sub": "01",
+    "code": "SPR",
+    "description": "Sprinkleranlage"
+  },
+  {
+    "groupId": "475",
+    "sub": "02",
+    "code": "GLA",
+    "description": "Gaslöschanlagen (z.B. CO2)"
+  },
+  {
+    "groupId": "475",
+    "sub": "02",
+    "code": "NLA",
+    "description": "Nebellöschanlage"
+  },
+  {
+    "groupId": "475",
+    "sub": "03",
+    "code": "LWL",
+    "description": "Löschwasserleitungen"
+  },
+  {
+    "groupId": "475",
+    "sub": "04",
+    "code": "WHA",
+    "description": "Wandhydrantenanlage"
+  },
+  {
+    "groupId": "475",
+    "sub": "05",
+    "code": "HFL",
+    "description": "Handfeuerlöscher"
+  },
+  {
+    "groupId": "475",
+    "sub": "06",
+    "code": "FLG",
+    "description": "Feuerlöschgeräte"
+  },
+  {
+    "groupId": "﻿476",
+    "sub": "01",
+    "code": "SBA",
+    "description": "Schwimmbeckenanlagen"
+  },
+  {
+    "groupId": "﻿476",
+    "sub": "02",
+    "code": "SAA",
+    "description": "Saunaanlage"
+  },
+  {
+    "groupId": "﻿476",
+    "sub": "03",
+    "code": "MBA",
+    "description": "Medizinische Badeanlagen"
+  },
+  {
+    "groupId": "﻿476",
+    "sub": "04",
+    "code": "WHP",
+    "description": "Whirlpool"
+  },
+  {
+    "groupId": "﻿477",
+    "sub": "01",
+    "code": "FNA",
+    "description": "Farbnebelabscheideanlage"
+  },
+  {
+    "groupId": "﻿477",
+    "sub": "02",
+    "code": "PLA",
+    "description": "Prozess-Fortluftanlage"
+  },
+  {
+    "groupId": "﻿477",
+    "sub": "03",
+    "code": "PAA",
+    "description": "Prozess-Abluftanlage"
+  },
+  {
+    "groupId": "﻿477",
+    "sub": "04",
+    "code": "PKA",
+    "description": "Prozess-Kälteanlagen"
+  },
+  {
+    "groupId": "﻿477",
+    "sub": "05",
+    "code": "KVT",
+    "description": "Kälteverteilleitungen"
+  },
+  {
+    "groupId": "﻿477",
+    "sub": "06",
+    "code": "PWA",
+    "description": "Prozess-Wärmeanlagen"
+  },
+  {
+    "groupId": "﻿478",
+    "sub": "01",
+    "code": "AEA",
+    "description": "Abfallentsorgungsanlage"
+  },
+  {
+    "groupId": "478",
+    "sub": "01",
+    "code": "AVA",
+    "description": "Abfallverdichtungsanlage"
+  },
+  {
+    "groupId": "﻿478",
+    "sub": "02",
+    "code": "SAE",
+    "description": "Sonderabfallentsorgungsanlage"
+  },
+  {
+    "groupId": "﻿478",
+    "sub": "03",
+    "code": "REA",
+    "description": "Recyclinganlage"
+  },
+  {
+    "groupId": "﻿478",
+    "sub": "04",
+    "code": "KOA",
+    "description": "Kompostieranlage"
+  },
+  {
+    "groupId": "﻿479",
+    "sub": "01",
+    "code": "BTA",
+    "description": "Bühnentechnische Anlagen"
+  },
+  {
+    "groupId": "﻿479",
+    "sub": "02",
+    "code": "BET",
+    "description": "Betankungsanlage"
+  },
+  {
+    "groupId": "﻿479",
+    "sub": "03",
+    "code": "FWA",
+    "description": "Fahrzeugwaschanlage"
+  },
+  {
+    "groupId": "479",
+    "sub": "04",
+    "code": "BHK",
+    "description": "Blockheizkraftwerk"
+  },
+  {
+    "groupId": "479",
+    "sub": "05",
+    "code": "OFE",
+    "description": "Ortsfeste Einbauten"
+  },
+  {
+    "groupId": "479",
+    "sub": "06",
+    "code": "SOA",
+    "description": "Sonderanlagen"
+  },
+  {
+    "groupId": "﻿481",
+    "sub": "01",
+    "code": "AUS",
+    "description": "Automationsstationen"
+  },
+  {
+    "groupId": "﻿481",
+    "sub": "02",
+    "code": "BBS",
+    "description": "Bedien- und Beobachtungsstation"
+  },
+  {
+    "groupId": "﻿481",
+    "sub": "03",
+    "code": "PER",
+    "description": "Programmierungseinrichtungen"
+  },
+  {
+    "groupId": "﻿481",
+    "sub": "04",
+    "code": "SUA",
+    "description": "Sensoren- und Aktoren"
+  },
+  {
+    "groupId": "﻿482",
+    "sub": "01",
+    "code": "LET",
+    "description": "Leistungsteile"
+  },
+  {
+    "groupId": "﻿483",
+    "sub": "01",
+    "code": "ZEI",
+    "description": "Zentrale Einrichtung"
+  },
+  {
+    "groupId": "531",
+    "sub": "04",
+    "code": "BFK",
+    "description": "Briefkasten"
+  },
+  {
+    "groupId": "﻿532",
+    "sub": "04",
+    "code": "PSA",
+    "description": "Sicherung und Fallschutz"
+  },
+  {
+    "groupId": "﻿532",
+    "sub": "05",
+    "code": "TVG",
+    "description": "Taubenvergrämung"
+  },
+  {
+    "groupId": "534",
+    "sub": "01",
+    "code": "???",
+    "description": "Kinderwagen- und Behindertenrampe"
+  },
+  {
+    "groupId": "534",
+    "sub": "03",
+    "code": "???",
+    "description": "Treppe"
+  },
+  {
+    "groupId": "﻿535",
+    "sub": "01",
+    "code": "RUS",
+    "description": "Raucherunterstand"
+  },
+  {
+    "groupId": "﻿538",
+    "sub": "02",
+    "code": "RRB",
+    "description": "Regenwasserrückhaltebecken"
+  },
+  {
+    "groupId": "541",
+    "sub": "01",
+    "code": "KAN",
+    "description": "Kanal"
+  },
+  {
+    "groupId": "541",
+    "sub": "02",
+    "code": "???",
+    "description": "Ablauf"
+  },
+  {
+    "groupId": "541",
+    "sub": "04",
+    "code": "???",
+    "description": "Abscheider"
+  },
+  {
+    "groupId": "542",
+    "sub": "01",
+    "code": "WGA",
+    "description": "Wassergewinnungsanlage"
+  },
+  {
+    "groupId": "542",
+    "sub": "02",
+    "code": "WVN",
+    "description": "Wasserversorgungsnetz"
+  },
+  {
+    "groupId": "542",
+    "sub": "03",
+    "code": "HYA",
+    "description": "Hydrantenanlagen"
+  },
+  {
+    "groupId": "542",
+    "sub": "04",
+    "code": "DEB",
+    "description": "Druckerhöhungs- und Beregnungsanlge"
+  },
+  {
+    "groupId": "543",
+    "sub": "01",
+    "code": "GVN",
+    "description": "Gasversorgungsnetz"
+  },
+  {
+    "groupId": "544",
+    "sub": "02",
+    "code": "NWV",
+    "description": "Wärmeversorgungsnetz"
+  },
+  {
+    "groupId": "546",
+    "sub": "01",
+    "code": "???",
+    "description": "Stromversorgungsnetz"
+  },
+  {
+    "groupId": "546",
+    "sub": "04",
+    "code": "???",
+    "description": "Außenbeleuchtung"
+  },
+  {
+    "groupId": "546",
+    "sub": "06",
+    "code": "???",
+    "description": "Haupt- und Unterverteiler"
+  },
+  {
+    "groupId": "546",
+    "sub": "07",
+    "code": "???",
+    "description": "Hoch- und Mittelspannungsnetz"
+  },
+  {
+    "groupId": "611",
+    "sub": "01",
+    "code": "MÖA",
+    "description": "Möbel außen"
+  },
+  {
+    "groupId": "611",
+    "sub": "02",
+    "code": "MÖI",
+    "description": "Möbel innen"
+  },
+  {
+    "groupId": "623",
+    "sub": "01",
+    "code": "SIS",
+    "description": "Sicherheits- und Gefahrgutschrank"
+  },
+  {
+    "groupId": "641",
+    "sub": "02",
+    "code": "KUW",
+    "description": "Kunstwerk"
+  }
+]
