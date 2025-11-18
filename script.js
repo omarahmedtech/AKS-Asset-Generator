@@ -1,5 +1,8 @@
 const DEFAULT_KEY = "C1";
 const DEFAULT_BAUTEIL = "01";
+const ACCESS_PIN = "2025"; // simple PIN to unlock the tool
+const THEME_STORAGE_KEY = "aks-theme";
+const DEFAULT_THEME = "light";
 
 let CATALOG = [];          // raw from JSON
 let CONFIG = {};           // map: "groupId||code" -> entry
@@ -252,7 +255,88 @@ function downloadXLSX() {
   XLSX.writeFile(wb, "aks_assets.xlsx");
 }
 
+function getStoredTheme() {
+  try {
+    return localStorage.getItem(THEME_STORAGE_KEY);
+  } catch (err) {
+    console.warn("Cannot access localStorage for theme:", err);
+    return null;
+  }
+}
+
+function storeTheme(theme) {
+  try {
+    localStorage.setItem(THEME_STORAGE_KEY, theme);
+  } catch (err) {
+    console.warn("Cannot persist theme preference:", err);
+  }
+}
+
 window.addEventListener("DOMContentLoaded", async () => {
+  const pinOverlay = document.getElementById("pin-overlay");
+  const pinInput = document.getElementById("pin-input");
+  const pinSubmit = document.getElementById("pin-submit");
+  const pinError = document.getElementById("pin-error");
+  const themeToggle = document.getElementById("theme-toggle");
+
+  const clearPinError = () => {
+    pinError.style.display = "none";
+    pinError.textContent = "";
+  };
+
+  const unlockApp = () => {
+    clearPinError();
+    pinOverlay.style.display = "none";
+  };
+
+  const handlePinSubmit = () => {
+    const entered = (pinInput.value || "").trim();
+    if (entered === ACCESS_PIN) {
+      unlockApp();
+      pinInput.value = "";
+      return;
+    }
+    pinInput.value = "";
+    pinError.textContent = "Wrong PIN. Try again.";
+    pinError.style.display = "block";
+    pinInput.focus();
+  };
+
+  pinInput.addEventListener("input", () => {
+    if (pinError.style.display === "block") {
+      clearPinError();
+    }
+  });
+
+  pinInput.addEventListener("keydown", evt => {
+    if (evt.key === "Enter") {
+      evt.preventDefault();
+      handlePinSubmit();
+    }
+  });
+
+  pinSubmit.addEventListener("click", handlePinSubmit);
+
+  const applyTheme = theme => {
+    document.body.dataset.theme = theme;
+    if (themeToggle) {
+      const isDark = theme === "dark";
+      themeToggle.textContent = isDark ? "☀️ Light" : "🌙 Dark";
+    }
+  };
+
+  const storedTheme = getStoredTheme();
+  applyTheme(storedTheme || DEFAULT_THEME);
+
+  if (themeToggle) {
+    themeToggle.addEventListener("click", () => {
+      const currentTheme = document.body.dataset.theme === "dark" ? "dark" : "light";
+      const nextTheme = currentTheme === "dark" ? "light" : "dark";
+      applyTheme(nextTheme);
+      storeTheme(nextTheme);
+    });
+  }
+
   const inputRowsContainer = document.getElementById("input-rows");
   const addRowBtn = document.getElementById("add-row-btn");
   const generateBtn = document.getElementById("generate-btn");
