@@ -28,6 +28,16 @@ let BUILDING_LABELS = [];   // unique bauwerk labels, e.g. "Gebäude 48"
 let BUILDING_TO_ID = {};    // bauwerk -> idBauwerk
 
 // ------------------------
+// Helpers
+// ------------------------
+
+// Extract number from "Gebäude 48", "Gebäude 05 (Mensa)", etc.
+function getBuildingNumber(buildingLabel) {
+  const m = (buildingLabel || "").match(/(\d+)/);
+  return m ? m[1] : "";
+}
+
+// ------------------------
 // Load aks_catalog.json
 // ------------------------
 async function loadCatalog() {
@@ -80,8 +90,8 @@ async function loadBuildings() {
     BUILDING_MAP = await res.json();
 
     const labelSet = new Set();
-
     BUILDING_TO_ID = {};
+
     BUILDING_MAP.forEach(rec => {
       const label = (rec.bauwerk || "").trim();
       const idBauwerk = (rec.idBauwerk || "").trim();
@@ -90,7 +100,7 @@ async function loadBuildings() {
       // Collect unique building names for dropdown
       labelSet.add(label);
 
-      // Map building -> idBauwerk (first one wins, they are constant per building)
+      // Map building -> idBauwerk (first one wins, constant per building)
       if (idBauwerk && !BUILDING_TO_ID[label]) {
         BUILDING_TO_ID[label] = idBauwerk;
       }
@@ -205,9 +215,7 @@ function generateIdsForRow(groupId, building, room, variant, quantity) {
     throw new Error("Unknown AKS combination: " + key);
   }
 
-  const gebParts = building.trim().split(" ");
-  const gebNum = gebParts[gebParts.length - 1];
-
+  const gebNum = getBuildingNumber(building);
   const roomStr = room.trim();
   const floor = roomStr.charAt(0);
 
@@ -318,6 +326,7 @@ function downloadXLSX() {
   XLSX.writeFile(wb, "aks_assets.xlsx");
 }
 
+// Replace German special letters only for CSV export
 function normalizeGermanForCSV(str) {
   if (!str) return str;
   return str
@@ -463,6 +472,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     return;
   }
 
+  // first blank row
   inputRowsContainer.appendChild(createInputRow());
 
   addRowBtn.addEventListener("click", () => {
@@ -522,11 +532,10 @@ window.addEventListener("DOMContentLoaded", async () => {
           const gruppeCell = `${cfg.groupId}.${cfg.sub} ${cfg.description || ""}`.trim();
           const priority = "mittel";
 
-          const gebParts = building.trim().split(" ");
-          const gebNum = gebParts[gebParts.length - 1];
+          const gebNum = getBuildingNumber(building);
           const costCenter = "99000" + gebNum;
 
-          // NEW: ID Raum from building map (idBauwerk)
+          // ID Raum from building map (idBauwerk)
           const idRaum = BUILDING_TO_ID[building] || "";
 
           ids.forEach(id => {
