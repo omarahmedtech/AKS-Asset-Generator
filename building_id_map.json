@@ -1,0 +1,668 @@
+[
+  {
+    "bauwerk": "C2",
+    "idBauwerk": "0000000000000I3E",
+    "bauteil": "01",
+    "ebene": "1"
+  },
+  {
+    "bauwerk": "C2",
+    "idBauwerk": "0000000000000I3E",
+    "bauteil": "01",
+    "ebene": "2"
+  },
+  {
+    "bauwerk": "C2",
+    "idBauwerk": "0000000000000I3E",
+    "bauteil": "01",
+    "ebene": "3"
+  },
+  {
+    "bauwerk": "C2",
+    "idBauwerk": "0000000000000I3E",
+    "bauteil": "01",
+    "ebene": "E"
+  },
+  {
+    "bauwerk": "C2",
+    "idBauwerk": "0000000000000I3E",
+    "bauteil": "01",
+    "ebene": "U"
+  },
+  {
+    "bauwerk": "C3",
+    "idBauwerk": "0000000000002EKU",
+    "bauteil": "01",
+    "ebene": "1"
+  },
+  {
+    "bauwerk": "Campus Miltenberg",
+    "idBauwerk": "00000000000022M3",
+    "bauteil": "01",
+    "ebene": "E"
+  },
+  {
+    "bauwerk": "Denkfabrik",
+    "idBauwerk": "0000000000004GR1",
+    "bauteil": "01",
+    "ebene": "01"
+  },
+  {
+    "bauwerk": "Gebäude 01",
+    "idBauwerk": "0000000000000HZH",
+    "bauteil": "01",
+    "ebene": "1"
+  },
+  {
+    "bauwerk": "Gebäude 01",
+    "idBauwerk": "0000000000000HZH",
+    "bauteil": "01",
+    "ebene": "2"
+  },
+  {
+    "bauwerk": "Gebäude 01",
+    "idBauwerk": "0000000000000HZH",
+    "bauteil": "01",
+    "ebene": "3"
+  },
+  {
+    "bauwerk": "Gebäude 01",
+    "idBauwerk": "0000000000000HZH",
+    "bauteil": "01",
+    "ebene": "E"
+  },
+  {
+    "bauwerk": "Gebäude 01",
+    "idBauwerk": "0000000000000HZH",
+    "bauteil": "01",
+    "ebene": "U"
+  },
+  {
+    "bauwerk": "Gebäude 02",
+    "idBauwerk": "0000000000000HY3",
+    "bauteil": "01",
+    "ebene": "1"
+  },
+  {
+    "bauwerk": "Gebäude 02",
+    "idBauwerk": "0000000000000HY3",
+    "bauteil": "01",
+    "ebene": "2"
+  },
+  {
+    "bauwerk": "Gebäude 02",
+    "idBauwerk": "0000000000000HY3",
+    "bauteil": "01",
+    "ebene": "2Z"
+  },
+  {
+    "bauwerk": "Gebäude 02",
+    "idBauwerk": "0000000000000HY3",
+    "bauteil": "01",
+    "ebene": "3"
+  },
+  {
+    "bauwerk": "Gebäude 02",
+    "idBauwerk": "0000000000000HY3",
+    "bauteil": "01",
+    "ebene": "E"
+  },
+  {
+    "bauwerk": "Gebäude 04",
+    "idBauwerk": "0000000000000HY2",
+    "bauteil": "01",
+    "ebene": "1"
+  },
+  {
+    "bauwerk": "Gebäude 04",
+    "idBauwerk": "0000000000000HY2",
+    "bauteil": "01",
+    "ebene": "2"
+  },
+  {
+    "bauwerk": "Gebäude 04",
+    "idBauwerk": "0000000000000HY2",
+    "bauteil": "01",
+    "ebene": "3"
+  },
+  {
+    "bauwerk": "Gebäude 04",
+    "idBauwerk": "0000000000000HY2",
+    "bauteil": "01",
+    "ebene": "E"
+  },
+  {
+    "bauwerk": "Gebäude 04",
+    "idBauwerk": "0000000000000HY2",
+    "bauteil": "01",
+    "ebene": "U"
+  },
+  {
+    "bauwerk": "Gebäude 05 (Mensa)",
+    "idBauwerk": "0000000000000I1U",
+    "bauteil": "01",
+    "ebene": "1"
+  },
+  {
+    "bauwerk": "Gebäude 05 (Mensa)",
+    "idBauwerk": "0000000000000I1U",
+    "bauteil": "01",
+    "ebene": "2"
+  },
+  {
+    "bauwerk": "Gebäude 05 (Mensa)",
+    "idBauwerk": "0000000000000I1U",
+    "bauteil": "01",
+    "ebene": "E"
+  },
+  {
+    "bauwerk": "Gebäude 05 (Mensa)",
+    "idBauwerk": "0000000000000I1U",
+    "bauteil": "01",
+    "ebene": "U"
+  },
+  {
+    "bauwerk": "Gebäude 06",
+    "idBauwerk": "0000000000000I2P",
+    "bauteil": "01",
+    "ebene": "1"
+  },
+  {
+    "bauwerk": "Gebäude 06",
+    "idBauwerk": "0000000000000I2P",
+    "bauteil": "01",
+    "ebene": "2"
+  },
+  {
+    "bauwerk": "Gebäude 06",
+    "idBauwerk": "0000000000000I2P",
+    "bauteil": "01",
+    "ebene": "E"
+  },
+  {
+    "bauwerk": "Gebäude 06",
+    "idBauwerk": "0000000000000I2P",
+    "bauteil": "01",
+    "ebene": "EZ"
+  },
+  {
+    "bauwerk": "Gebäude 07",
+    "idBauwerk": "0000000000000I7P",
+    "bauteil": "01",
+    "ebene": "1"
+  },
+  {
+    "bauwerk": "Gebäude 07",
+    "idBauwerk": "0000000000000I7P",
+    "bauteil": "01",
+    "ebene": "E"
+  },
+  {
+    "bauwerk": "Gebäude 20",
+    "idBauwerk": "0000000000000HXW",
+    "bauteil": "01",
+    "ebene": "1"
+  },
+  {
+    "bauwerk": "Gebäude 20",
+    "idBauwerk": "0000000000000HXW",
+    "bauteil": "01",
+    "ebene": "2"
+  },
+  {
+    "bauwerk": "Gebäude 20",
+    "idBauwerk": "0000000000000HXW",
+    "bauteil": "01",
+    "ebene": "3"
+  },
+  {
+    "bauwerk": "Gebäude 20",
+    "idBauwerk": "0000000000000HXW",
+    "bauteil": "01",
+    "ebene": "E"
+  },
+  {
+    "bauwerk": "Gebäude 20",
+    "idBauwerk": "0000000000000HXW",
+    "bauteil": "01",
+    "ebene": "U"
+  },
+  {
+    "bauwerk": "Gebäude 21",
+    "idBauwerk": "0000000000000IE7",
+    "bauteil": "00",
+    "ebene": "E"
+  },
+  {
+    "bauwerk": "Gebäude 21",
+    "idBauwerk": "0000000000000IE7",
+    "bauteil": "01",
+    "ebene": "E"
+  },
+  {
+    "bauwerk": "Gebäude 22",
+    "idBauwerk": "0000000000000HXT",
+    "bauteil": "01",
+    "ebene": "1"
+  },
+  {
+    "bauwerk": "Gebäude 22",
+    "idBauwerk": "0000000000000HXT",
+    "bauteil": "01",
+    "ebene": "2"
+  },
+  {
+    "bauwerk": "Gebäude 22",
+    "idBauwerk": "0000000000000HXT",
+    "bauteil": "01",
+    "ebene": "3"
+  },
+  {
+    "bauwerk": "Gebäude 22",
+    "idBauwerk": "0000000000000HXT",
+    "bauteil": "01",
+    "ebene": "E"
+  },
+  {
+    "bauwerk": "Gebäude 22",
+    "idBauwerk": "0000000000000HXT",
+    "bauteil": "01",
+    "ebene": "U"
+  },
+  {
+    "bauwerk": "Gebäude 24",
+    "idBauwerk": "0000000000000HYW",
+    "bauteil": "01",
+    "ebene": "1"
+  },
+  {
+    "bauwerk": "Gebäude 24",
+    "idBauwerk": "0000000000000HYW",
+    "bauteil": "01",
+    "ebene": "2"
+  },
+  {
+    "bauwerk": "Gebäude 24",
+    "idBauwerk": "0000000000000HYW",
+    "bauteil": "01",
+    "ebene": "3"
+  },
+  {
+    "bauwerk": "Gebäude 24",
+    "idBauwerk": "0000000000000HYW",
+    "bauteil": "01",
+    "ebene": "E"
+  },
+  {
+    "bauwerk": "Gebäude 24",
+    "idBauwerk": "0000000000000HYW",
+    "bauteil": "01",
+    "ebene": "U"
+  },
+  {
+    "bauwerk": "Gebäude 25 (Bibliothek)",
+    "idBauwerk": "0000000000000I20",
+    "bauteil": "01",
+    "ebene": "1"
+  },
+  {
+    "bauwerk": "Gebäude 25 (Bibliothek)",
+    "idBauwerk": "0000000000000I20",
+    "bauteil": "01",
+    "ebene": "2"
+  },
+  {
+    "bauwerk": "Gebäude 25 (Bibliothek)",
+    "idBauwerk": "0000000000000I20",
+    "bauteil": "01",
+    "ebene": "E"
+  },
+  {
+    "bauwerk": "Gebäude 25 (Bibliothek)",
+    "idBauwerk": "0000000000000I20",
+    "bauteil": "01",
+    "ebene": "U"
+  },
+  {
+    "bauwerk": "Gebäude 26",
+    "idBauwerk": "0000000000000HXM",
+    "bauteil": "01",
+    "ebene": "1"
+  },
+  {
+    "bauwerk": "Gebäude 26",
+    "idBauwerk": "0000000000000HXM",
+    "bauteil": "01",
+    "ebene": "2"
+  },
+  {
+    "bauwerk": "Gebäude 26",
+    "idBauwerk": "0000000000000HXM",
+    "bauteil": "01",
+    "ebene": "3"
+  },
+  {
+    "bauwerk": "Gebäude 26",
+    "idBauwerk": "0000000000000HXM",
+    "bauteil": "01",
+    "ebene": "4"
+  },
+  {
+    "bauwerk": "Gebäude 26",
+    "idBauwerk": "0000000000000HXM",
+    "bauteil": "01",
+    "ebene": "5"
+  },
+  {
+    "bauwerk": "Gebäude 26",
+    "idBauwerk": "0000000000000HXM",
+    "bauteil": "00",
+    "ebene": "C12600E_"
+  },
+  {
+    "bauwerk": "Gebäude 26",
+    "idBauwerk": "0000000000000HXM",
+    "bauteil": "01",
+    "ebene": "E"
+  },
+  {
+    "bauwerk": "Gebäude 40",
+    "idBauwerk": "0000000000000HXL",
+    "bauteil": "01",
+    "ebene": "1"
+  },
+  {
+    "bauwerk": "Gebäude 40",
+    "idBauwerk": "0000000000000HXL",
+    "bauteil": "01",
+    "ebene": "1Z"
+  },
+  {
+    "bauwerk": "Gebäude 40",
+    "idBauwerk": "0000000000000HXL",
+    "bauteil": "01",
+    "ebene": "2"
+  },
+  {
+    "bauwerk": "Gebäude 40",
+    "idBauwerk": "0000000000000HXL",
+    "bauteil": "01",
+    "ebene": "2Z"
+  },
+  {
+    "bauwerk": "Gebäude 40",
+    "idBauwerk": "0000000000000HXL",
+    "bauteil": "01",
+    "ebene": "C140013_"
+  },
+  {
+    "bauwerk": "Gebäude 40",
+    "idBauwerk": "0000000000000HXL",
+    "bauteil": "01",
+    "ebene": "E"
+  },
+  {
+    "bauwerk": "Gebäude 40",
+    "idBauwerk": "0000000000000HXL",
+    "bauteil": "01",
+    "ebene": "EZ"
+  },
+  {
+    "bauwerk": "Gebäude 40",
+    "idBauwerk": "0000000000000HXL",
+    "bauteil": "01",
+    "ebene": "U"
+  },
+  {
+    "bauwerk": "Gebäude 40",
+    "idBauwerk": "0000000000000HXL",
+    "bauteil": "01",
+    "ebene": "UZ"
+  },
+  {
+    "bauwerk": "Gebäude 41",
+    "idBauwerk": "0000000000000HYQ",
+    "bauteil": "01",
+    "ebene": "1"
+  },
+  {
+    "bauwerk": "Gebäude 41",
+    "idBauwerk": "0000000000000HYQ",
+    "bauteil": "01",
+    "ebene": "2"
+  },
+  {
+    "bauwerk": "Gebäude 41",
+    "idBauwerk": "0000000000000HYQ",
+    "bauteil": "01",
+    "ebene": "E"
+  },
+  {
+    "bauwerk": "Gebäude 42",
+    "idBauwerk": "0000000000000I95",
+    "bauteil": "01",
+    "ebene": "1"
+  },
+  {
+    "bauwerk": "Gebäude 42",
+    "idBauwerk": "0000000000000I95",
+    "bauteil": "01",
+    "ebene": "2"
+  },
+  {
+    "bauwerk": "Gebäude 42",
+    "idBauwerk": "0000000000000I95",
+    "bauteil": "01",
+    "ebene": "E"
+  },
+  {
+    "bauwerk": "Gebäude 43",
+    "idBauwerk": "0000000000000I6U",
+    "bauteil": "01",
+    "ebene": "1"
+  },
+  {
+    "bauwerk": "Gebäude 43",
+    "idBauwerk": "0000000000000I6U",
+    "bauteil": "01",
+    "ebene": "C143012"
+  },
+  {
+    "bauwerk": "Gebäude 43",
+    "idBauwerk": "0000000000000I6U",
+    "bauteil": "01",
+    "ebene": "E"
+  },
+  {
+    "bauwerk": "Gebäude 44",
+    "idBauwerk": "0000000000000ZSN",
+    "bauteil": "01",
+    "ebene": "E"
+  },
+  {
+    "bauwerk": "Gebäude 45",
+    "idBauwerk": "0000000000001IFW",
+    "bauteil": "01",
+    "ebene": "1"
+  },
+  {
+    "bauwerk": "Gebäude 45",
+    "idBauwerk": "0000000000001IFW",
+    "bauteil": "01",
+    "ebene": "E"
+  },
+  {
+    "bauwerk": "Gebäude 46",
+    "idBauwerk": "0000000000001NBW",
+    "bauteil": "01",
+    "ebene": "E"
+  },
+  {
+    "bauwerk": "Gebäude 47",
+    "idBauwerk": "0000000000001NBX",
+    "bauteil": "01",
+    "ebene": "E"
+  },
+  {
+    "bauwerk": "Gebäude 48",
+    "idBauwerk": "00000000000025T5",
+    "bauteil": "01",
+    "ebene": "1"
+  },
+  {
+    "bauwerk": "Gebäude 48",
+    "idBauwerk": "00000000000025T5",
+    "bauteil": "01",
+    "ebene": "2"
+  },
+  {
+    "bauwerk": "Gebäude 48",
+    "idBauwerk": "00000000000025T5",
+    "bauteil": "01",
+    "ebene": "3"
+  },
+  {
+    "bauwerk": "Gebäude 48",
+    "idBauwerk": "00000000000025T5",
+    "bauteil": "01",
+    "ebene": "4"
+  },
+  {
+    "bauwerk": "Gebäude 48",
+    "idBauwerk": "00000000000025T5",
+    "bauteil": "01",
+    "ebene": "E"
+  },
+  {
+    "bauwerk": "Gebäude 48",
+    "idBauwerk": "00000000000025T5",
+    "bauteil": "01",
+    "ebene": "U"
+  },
+  {
+    "bauwerk": "Gebäude 49",
+    "idBauwerk": "00000000000025T8",
+    "bauteil": "01",
+    "ebene": "1"
+  },
+  {
+    "bauwerk": "Gebäude 49",
+    "idBauwerk": "00000000000025T8",
+    "bauteil": "01",
+    "ebene": "2"
+  },
+  {
+    "bauwerk": "Gebäude 49",
+    "idBauwerk": "00000000000025T8",
+    "bauteil": "01",
+    "ebene": "3"
+  },
+  {
+    "bauwerk": "Gebäude 49",
+    "idBauwerk": "00000000000025T8",
+    "bauteil": "01",
+    "ebene": "E"
+  },
+  {
+    "bauwerk": "Gebäude 49",
+    "idBauwerk": "00000000000025T8",
+    "bauteil": "01",
+    "ebene": "U"
+  },
+  {
+    "bauwerk": "Gebäude 50 (Parkhaus)",
+    "idBauwerk": "00000000000026SK",
+    "bauteil": "01",
+    "ebene": "0"
+  },
+  {
+    "bauwerk": "Gebäude 50 (Parkhaus)",
+    "idBauwerk": "00000000000026SK",
+    "bauteil": "01",
+    "ebene": "1"
+  },
+  {
+    "bauwerk": "Gebäude 50 (Parkhaus)",
+    "idBauwerk": "00000000000026SK",
+    "bauteil": "01",
+    "ebene": "2"
+  },
+  {
+    "bauwerk": "Gebäude 50 (Parkhaus)",
+    "idBauwerk": "00000000000026SK",
+    "bauteil": "01",
+    "ebene": "3"
+  },
+  {
+    "bauwerk": "Gebäude 50 (Parkhaus)",
+    "idBauwerk": "00000000000026SK",
+    "bauteil": "01",
+    "ebene": "4"
+  },
+  {
+    "bauwerk": "Gebäude 50 (Parkhaus)",
+    "idBauwerk": "00000000000026SK",
+    "bauteil": "01",
+    "ebene": "5"
+  },
+  {
+    "bauwerk": "Gebäude 50 (Parkhaus)",
+    "idBauwerk": "00000000000026SK",
+    "bauteil": "01",
+    "ebene": "6"
+  },
+  {
+    "bauwerk": "Gebäude 54",
+    "idBauwerk": "0000000000002ZC6",
+    "bauteil": "01",
+    "ebene": "E"
+  },
+  {
+    "bauwerk": "Gebäude 55",
+    "idBauwerk": "000000000000323U",
+    "bauteil": "01",
+    "ebene": "E"
+  },
+  {
+    "bauwerk": "Gebäude 56",
+    "idBauwerk": "000000000000323X",
+    "bauteil": "01",
+    "ebene": "E"
+  },
+  {
+    "bauwerk": "Gebäude 57",
+    "idBauwerk": "0000000000003240",
+    "bauteil": "01",
+    "ebene": "E"
+  },
+  {
+    "bauwerk": "Gebäude 91",
+    "idBauwerk": "00000000000023X1",
+    "bauteil": "01",
+    "ebene": "E"
+  },
+  {
+    "bauwerk": "Gebäude 92 (Skills Lab)",
+    "idBauwerk": "00000000000033RG",
+    "bauteil": "01",
+    "ebene": "E"
+  },
+  {
+    "bauwerk": "TTZ NETZ",
+    "idBauwerk": "0000000000003W3F",
+    "bauteil": "01",
+    "ebene": "TTZ_011_"
+  },
+  {
+    "bauwerk": "TTZ NETZ",
+    "idBauwerk": "0000000000003W3F",
+    "bauteil": "01",
+    "ebene": "TTZ_01E_"
+  },
+  {
+    "bauwerk": "Zewis in Obernburg",
+    "idBauwerk": "0000000000001WIH",
+    "bauteil": "01",
+    "ebene": "3"
+  }
+]
