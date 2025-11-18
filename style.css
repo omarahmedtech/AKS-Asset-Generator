@@ -530,5 +530,6 @@ body[data-theme="dark"] tbody tr:hover {
 
   .btn-row {
     flex-direction: column;
+    
   }
 }
