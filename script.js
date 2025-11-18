@@ -3,6 +3,18 @@ const DEFAULT_BAUTEIL = "01";
 const ACCESS_PIN = "2025"; // simple PIN to unlock the tool
 const THEME_STORAGE_KEY = "aks-theme";
 const DEFAULT_THEME = "light";
+const RESULT_HEADERS = [
+  "Gruppe Technischer Anlagen",
+  "Technische Anlage",
+  "Techn. Anlagen Nr.",
+  "GLT-Code",
+  "Anlagenpriorität",
+  "Kostenstelle",
+  "Gebäude",
+  "Raum",
+  "Anlagetyp",
+  "Menge"
+];
 
 let CATALOG = [];          // raw from JSON
 let CONFIG = {};           // map: "groupId||code" -> entry
@@ -220,39 +232,56 @@ function sortResultTable() {
   if (info) info.textContent = `${rows.length} assets generated`;
 }
 
-function downloadXLSX() {
+function collectResultTableRows() {
   const tbody = document.getElementById("result-body");
   const rows = Array.from(tbody.querySelectorAll("tr"));
+  return rows.map(tr =>
+    Array.from(tr.querySelectorAll("td")).map(td => td.textContent)
+  );
+}
+
+function downloadXLSX() {
+  const rows = collectResultTableRows();
   if (rows.length === 0) {
     alert("No data to download.");
     return;
   }
 
-  const header = [
-    "Gruppe Technischer Anlagen",
-    "Technische Anlage",
-    "Techn. Anlagen Nr.",
-    "GLT-Code",
-    "Anlagenpriorität",
-    "Kostenstelle",
-    "Gebäude",
-    "Raum",
-    "Anlagetyp",
-    "Menge"
-  ];
-
-  const data = [header];
-
-  rows.forEach(tr => {
-    const cols = Array.from(tr.querySelectorAll("td")).map(td => td.textContent);
-    data.push(cols);
-  });
+  const data = [RESULT_HEADERS, ...rows];
 
   const wb = XLSX.utils.book_new();
   const ws = XLSX.utils.aoa_to_sheet(data);
   XLSX.utils.book_append_sheet(wb, ws, "AKS Assets");
 
   XLSX.writeFile(wb, "aks_assets.xlsx");
+}
+
+function downloadCSV() {
+  const rows = collectResultTableRows();
+  if (rows.length === 0) {
+    alert("No data to download.");
+    return;
+  }
+
+  const escapeCell = value => {
+    const hasSpecial = /[",\n]/.test(value);
+    const escaped = value.replace(/"/g, '""');
+    return hasSpecial ? `"${escaped}"` : escaped;
+  };
+
+  const allRows = [RESULT_HEADERS, ...rows];
+  const csvContent = allRows.map(row => row.map(escapeCell).join(",")).join("\r\n");
+
+  const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
+  const link = document.createElement("a");
+  const url = URL.createObjectURL(blob);
+  link.href = url;
+  link.download = "aks_assets.csv";
+  link.style.display = "none";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+  URL.revokeObjectURL(url);
 }
 
 function getStoredTheme() {
@@ -342,6 +371,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   const generateBtn = document.getElementById("generate-btn");
   const clearResultsBtn = document.getElementById("clear-results-btn");
   const downloadXlsxBtn = document.getElementById("download-xlsx-btn");
+  const downloadCsvBtn = document.getElementById("download-csv-btn");
   const inputError = document.getElementById("input-error");
 
   try {
@@ -451,4 +481,7 @@ window.addEventListener("DOMContentLoaded", async () => {
 
   clearResultsBtn.addEventListener("click", clearResults);
   downloadXlsxBtn.addEventListener("click", downloadXLSX);
+  if (downloadCsvBtn) {
+    downloadCsvBtn.addEventListener("click", downloadCSV);
+  }
 });
