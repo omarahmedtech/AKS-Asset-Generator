@@ -13,15 +13,23 @@ const RESULT_HEADERS = [
   "Gebäude",
   "Raum",
   "Anlagetyp",
+  "ID Raum",
   "Menge"
 ];
 
-let CATALOG = [];          // raw from JSON
+let CATALOG = [];          // raw from JSON (AKS catalog)
 let CONFIG = {};           // map: "groupId||code" -> entry
 let GROUP_MAP = new Map(); // groupId -> [entries]
 let SORTED_GROUP_IDS = []; // numerically sorted group IDs
 
+// building data from building_id_map.json
+let BUILDING_MAP = [];      // full records
+let BUILDING_LABELS = [];   // unique bauwerk labels, e.g. "Gebäude 48"
+let BUILDING_TO_ID = {};    // bauwerk -> idBauwerk
+
+// ------------------------
 // Load aks_catalog.json
+// ------------------------
 async function loadCatalog() {
   const res = await fetch("aks_catalog.json");
   if (!res.ok) {
@@ -53,13 +61,52 @@ async function loadCatalog() {
     const na = Number(a);
     const nb = Number(b);
     if (!isNaN(na) && !isNaN(nb)) {
-      return na - nb; // numeric sort, e.g. 100, 110, 120, 300...
+      return na - nb;
     }
-    // fallback: localeCompare with numeric just in case
     return a.localeCompare(b, "de", { numeric: true, sensitivity: "base" });
   });
 }
 
+// ------------------------
+// Load building list from JSON
+// ------------------------
+async function loadBuildings() {
+  try {
+    const res = await fetch("building_id_map.json");
+    if (!res.ok) {
+      console.warn("Cannot load building_id_map.json (status " + res.status + ")");
+      return;
+    }
+    BUILDING_MAP = await res.json();
+
+    const labelSet = new Set();
+
+    BUILDING_TO_ID = {};
+    BUILDING_MAP.forEach(rec => {
+      const label = (rec.bauwerk || "").trim();
+      const idBauwerk = (rec.idBauwerk || "").trim();
+      if (!label) return;
+
+      // Collect unique building names for dropdown
+      labelSet.add(label);
+
+      // Map building -> idBauwerk (first one wins, they are constant per building)
+      if (idBauwerk && !BUILDING_TO_ID[label]) {
+        BUILDING_TO_ID[label] = idBauwerk;
+      }
+    });
+
+    BUILDING_LABELS = Array.from(labelSet).sort((a, b) =>
+      a.localeCompare(b, "de", { numeric: true, sensitivity: "base" })
+    );
+  } catch (err) {
+    console.warn("Error loading building_id_map.json:", err);
+  }
+}
+
+// ------------------------
+// Create one input row
+// ------------------------
 function createInputRow() {
   const row = document.createElement("div");
   row.className = "input-table-row";
@@ -74,16 +121,16 @@ function createInputRow() {
 
   const groupSelect = document.createElement("select");
   const variantSelect = document.createElement("select");
-  const buildingInput = document.createElement("input");
+  const buildingSelect = document.createElement("select");
   const roomInput = document.createElement("textarea");
   const qtyInput = document.createElement("input");
 
-  buildingInput.classList.add("building-input");
+  buildingSelect.classList.add("building-input");
   roomInput.classList.add("room-input");
   qtyInput.classList.add("qty-input");
 
+  // Gruppe
   groupSelect.innerHTML = `<option value="">-- Gruppe wählen --</option>`;
-  // use numerically sorted group IDs
   SORTED_GROUP_IDS.forEach(groupId => {
     const opt = document.createElement("option");
     opt.value = groupId;
@@ -91,9 +138,19 @@ function createInputRow() {
     groupSelect.appendChild(opt);
   });
 
+  // Anlagetyp
   variantSelect.innerHTML = `<option value="">-- Anlagetyp wählen --</option>`;
 
-  buildingInput.placeholder = "Gebäude 48";
+  // Gebäude from list
+  buildingSelect.innerHTML = `<option value="">-- Gebäude wählen --</option>`;
+  BUILDING_LABELS.forEach(label => {
+    const opt = document.createElement("option");
+    opt.value = label;
+    opt.textContent = label;
+    buildingSelect.appendChild(opt);
+  });
+
+  // Räume + Menge
   roomInput.placeholder = "U05\nU06 x4\nU08 x2\nE16 x2\nE23 x3";
   qtyInput.type = "number";
   qtyInput.min = "1";
@@ -123,7 +180,7 @@ function createInputRow() {
 
   groupCell.appendChild(groupSelect);
   variantCell.appendChild(variantSelect);
-  buildingCell.appendChild(buildingInput);
+  buildingCell.appendChild(buildingSelect);
   roomCell.appendChild(roomInput);
   qtyCell.appendChild(qtyInput);
   deleteCell.appendChild(delBtn);
@@ -138,6 +195,9 @@ function createInputRow() {
   return row;
 }
 
+// ------------------------
+// ID generation
+// ------------------------
 function generateIdsForRow(groupId, building, room, variant, quantity) {
   const key = `${groupId}||${variant}`;
   const cfg = CONFIG[key];
@@ -174,6 +234,7 @@ function addResultRow(
   gebaeude,
   raum,
   anlagetyp,
+  idRaum,
   menge
 ) {
   const tbody = document.getElementById("result-body");
@@ -189,6 +250,7 @@ function addResultRow(
     gebaeude,
     raum,
     anlagetyp,
+    idRaum,
     String(menge)
   ];
 
@@ -256,6 +318,18 @@ function downloadXLSX() {
   XLSX.writeFile(wb, "aks_assets.xlsx");
 }
 
+function normalizeGermanForCSV(str) {
+  if (!str) return str;
+  return str
+    .replace(/Ä/g, "AE")
+    .replace(/Ö/g, "OE")
+    .replace(/Ü/g, "UE")
+    .replace(/ä/g, "ae")
+    .replace(/ö/g, "oe")
+    .replace(/ü/g, "ue")
+    .replace(/ß/g, "SS");
+}
+
 function downloadCSV() {
   const rows = collectResultTableRows();
   if (rows.length === 0) {
@@ -264,13 +338,16 @@ function downloadCSV() {
   }
 
   const escapeCell = value => {
-    const hasSpecial = /[",\n]/.test(value);
-    const escaped = value.replace(/"/g, '""');
+    const normalized = normalizeGermanForCSV(value ?? "");
+    const hasSpecial = /[",\n]/.test(normalized);
+    const escaped = normalized.replace(/"/g, '""');
     return hasSpecial ? `"${escaped}"` : escaped;
   };
 
   const allRows = [RESULT_HEADERS, ...rows];
-  const csvContent = allRows.map(row => row.map(escapeCell).join(",")).join("\r\n");
+  const csvContent = allRows
+    .map(row => row.map(escapeCell).join(","))
+    .join("\r\n");
 
   const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
   const link = document.createElement("a");
@@ -301,6 +378,9 @@ function storeTheme(theme) {
   }
 }
 
+// ------------------------
+// DOMContentLoaded
+// ------------------------
 window.addEventListener("DOMContentLoaded", async () => {
   const pinOverlay = document.getElementById("pin-overlay");
   const pinInput = document.getElementById("pin-input");
@@ -376,8 +456,9 @@ window.addEventListener("DOMContentLoaded", async () => {
 
   try {
     await loadCatalog();
+    await loadBuildings();   // load buildings + idBauwerk
   } catch (err) {
-    alert("Error loading aks_catalog.json: " + err.message);
+    alert("Error loading data: " + err.message);
     console.error(err);
     return;
   }
@@ -401,11 +482,11 @@ window.addEventListener("DOMContentLoaded", async () => {
       const groupId = selects[0]?.value.trim() || "";
       const variant = selects[1]?.value.trim() || "";
 
-      const buildingInput = row.querySelector(".building-input");
+      const buildingSelect = row.querySelector(".building-input");
       const roomInput = row.querySelector(".room-input");
       const qtyInput = row.querySelector(".qty-input");
 
-      const building = buildingInput ? buildingInput.value.trim() : "";
+      const building = buildingSelect ? buildingSelect.value.trim() : "";
       const roomRaw = roomInput ? roomInput.value : "";
       const defaultQty = qtyInput ? parseInt(qtyInput.value, 10) || 1 : 1;
 
@@ -445,6 +526,9 @@ window.addEventListener("DOMContentLoaded", async () => {
           const gebNum = gebParts[gebParts.length - 1];
           const costCenter = "99000" + gebNum;
 
+          // NEW: ID Raum from building map (idBauwerk)
+          const idRaum = BUILDING_TO_ID[building] || "";
+
           ids.forEach(id => {
             const techAnlage = `${cfg.description || ""}_${id}`.replace(/^_/, "");
             addResultRow(
@@ -457,6 +541,7 @@ window.addEventListener("DOMContentLoaded", async () => {
               building,
               room,
               cfg.code,
+              idRaum,
               1
             );
           });
