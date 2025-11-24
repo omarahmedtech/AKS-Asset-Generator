@@ -63,6 +63,18 @@ header {
   box-shadow: var(--shadow-soft);
 }
 
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.brand-logo {
+  width: 140px;
+  max-width: 32vw;
+  height: auto;
+}
+
 .title-block {
   display: flex;
   flex-direction: column;
@@ -517,6 +529,15 @@ body[data-theme="dark"] tbody tr:hover {
   header {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .header-left {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .brand-logo {
+    width: 160px;
   }
 
   .input-table-header,
