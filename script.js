@@ -326,17 +326,9 @@ function downloadXLSX() {
   XLSX.writeFile(wb, "aks_assets.xlsx");
 }
 
-// Replace German special letters only for CSV export
+// Keep German special letters as-is for CSV export
 function normalizeGermanForCSV(str) {
-  if (!str) return str;
-  return str
-    .replace(/Ä/g, "AE")
-    .replace(/Ö/g, "OE")
-    .replace(/Ü/g, "UE")
-    .replace(/ä/g, "ae")
-    .replace(/ö/g, "oe")
-    .replace(/ü/g, "ue")
-    .replace(/ß/g, "SS");
+  return str ?? "";
 }
 
 function downloadCSV() {
@@ -358,7 +350,8 @@ function downloadCSV() {
     .map(row => row.map(escapeCell).join(","))
     .join("\r\n");
 
-  const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
+  const BOM = "\uFEFF"; // ensure Excel opens UTF-8 correctly
+  const blob = new Blob([BOM, csvContent], { type: "text/csv;charset=utf-8;" });
   const link = document.createElement("a");
   const url = URL.createObjectURL(blob);
   link.href = url;
